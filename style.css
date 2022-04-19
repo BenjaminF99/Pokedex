@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+}
+
+#pokedex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon {
+    background: linear-gradient(180deg, rgb(218, 13, 13) 55%, #fff 50%);
+    border: 2px solid #232323;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px #232323(100, 100, 100, 1);
+    margin: 35px;
+    margin-left: 70px;
+    padding: 25px;
+    text-align: center;
+}
+
+.pokemon .img_container {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.pokemon .img_container img {
+    margin-top: 30px;
+    max-width: 90%;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.pokemon .info {
+    margin-bottom: 20px;
+}
+
+.name,
+.type {
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    align-items: center;
+    margin-top: 100px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(211, 39, 39);
+}
+
+button {
+    margin-left: 440px;
+    margin-top: -40px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: rgb(147, 204, 223);
+    background: rgb(211, 39, 39);
+}
+
+button:hover {
+    background: rgb(187, 35, 35);
+    transition: 0.5s ease-in-out;
+}
+ 
+button:focus {
+    cursor: pointer;
+}
