@@ -13,61 +13,92 @@ body {
     background: lightblue;
 }
 
+/* PokeDex css codes */
 #pokedex_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-.pokemon {
-    background: linear-gradient(180deg, rgb(218, 13, 13) 55%, #fff 50%);
-    border: 2px solid #232323;
-    border-radius: 20px;
-    box-shadow: 0 3px 15px #232323(100, 100, 100, 1);
-    margin: 35px;
-    margin-left: 70px;
-    padding: 25px;
-    text-align: center;
-}
-
-.pokemon .img_container {
-    width: 350px;
-    height: 300px;
-    margin-bottom: 50px;
-}
-
-.pokemon .img_container img {
-    margin-top: 30px;
-    max-width: 90%;
-    height: 200px;
-    width: 200px;
-    align-items: center;
+    padding: 30px;
 }
 
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16%;
     border: 2px solid black;
     border-radius: 50%;
     background: #fff;
+    height: 150px;
+    width: 150px;
 }
 
-.pokemon .info {
-    margin-bottom: 20px;
+.img_container {
+    background: red;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0;
+    border-width: 2px 2px 0px 2px;
+    height: 270px;
+    width: 370px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 2px solid black;
+    border-radius: 0 0 20px 20px;
+    height: 230px;
+    width: 370px;
+    padding: 20px;
 }
 
 .name,
 .type {
     align-items: center;
-    text-align: center;
     text-transform: capitalize;
 }
 
+.name,
+.type {
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.stats_container {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    text-transform: capitalize;
+    justify-content: space-around;
+}
+
+.stats_container,
+p {
+    font-size: 15px;
+}
+
+.shiny_img {
+    border: none;
+    background-color: red;
+    padding: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+.shiny_img img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Hiddes objekts */
 .hide {
     display: none !important;
 }
 
+/* Css style for Input and the search button */
 input {
     width: 400px;
     height: 40px;
@@ -83,7 +114,7 @@ input:focus {
     border: 2px solid rgb(211, 39, 39);
 }
 
-button {
+#btn {
     margin-left: 440px;
     margin-top: -40px;
     width: 40px;
@@ -94,7 +125,7 @@ button {
     background: rgb(211, 39, 39);
 }
 
-button:hover {
+.btn:hover {
     background: rgb(187, 35, 35);
     transition: 0.5s ease-in-out;
 }
